@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+// Here is what you get
+
+.what-you-get__header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #8D81AC;
+  margin: 32px 47px 0 43px;
+;
+
+  &::after {
+    content: ">";
+  }
+
+  &::before {
+    content: "<";
+  }
+}
+
+.what-you-get__wrapper {
+  margin: 0 25px 0 25px;
+}
+
+.what-you-get__content {
+  margin-top: 36px ;
+
+  & img {
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+
+  & h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #323232;
+    margin-top: 24px;
+    display: block;
+  }
+
+  & p {
+    margin-top: 14px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color:#848E97;
+    line-height: 21px;
+    display: block;
+  }
+}
+
+.what-you-get__banner {
+  margin: 70px 0 0 25px;
+  background-image: url("../../dist/img/editor 1.png");
+  background-size: 160%;
+  background-repeat: no-repeat;
+  height: 380px;
+}
+
+// People Are Talking About Fork
+
+.people-talking {
+  padding: 57px 40px 20px 40px;
+  background-image: url("../../dist/img/testmonials-bg 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    display: block;
+    margin-top: 25px;
+    content: "";
+    height: 4px;
+    border-top: 2px solid #645766;
+  }
+}
+
+.people-talking__header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  line-height: 48px;
+}
+
+.people-talking__content {
+  margin-top: 45px;
+
+  & img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  & p {
+    margin-top: 20px;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    line-height: 24px;
+  }
+}
+
+.people-talking__last-paragraph {
+  margin-top: 35px ;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #A291A5;
+  line-height: 21px;
+}
+
+//Fork Subscription Pricing
+
+.subscription-pricing {
+  padding-top: 15px;
+  background-image: url("../../dist/img/base 3 (1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+.subscription-pricing__header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  line-height: 42px;
+  margin: 0 20px 0 20px;
+}
+
+.subscription-pricing__content {
+  margin: 20px 32px 0 32px;
+  background: rgba(255, 255, 255, 11%);
+  padding-bottom: 36px;
+
+
+  & .subscription-pricing__rate {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    line-height: 24px;
+    background-color:
+            rgba(255, 255, 255, 6%);
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  & .subscription-pricing__price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 62px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  & .subscription-pricing__period {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+
+    &::after {
+      display: block;
+      margin: 38px auto 0 auto;
+      content: "";
+      height: 5px;
+      border-top: 5px solid #8D81AC;
+      width: 60px;
+    }
+  }
+
+  & .subscription-pricing__terms {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    text-align: center;
+    margin: 30px 20px 0 20px;
+  }
+
+  & .subscription-pricing__button {
+    background: rgba(255, 255, 255, 15%);
+    color: white;
+    text-decoration: none;
+    width: 163px;
+    height: 45px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 37px auto 0 auto;
+  }
+}
+
+.subscription-pricing__content.active {
+  margin: 20px 10px 0 10px;
+  background: rgba(70, 48, 72, 84%);
+  padding-bottom: 36px;
+
+  & .subscription-pricing__rate {
+     background: rgba(0, 0, 0, 11%);
+  }
+
+  & .subscription-pricing__price {
+    font-size: 82px;
+  }
+
+  & .subscription-pricing__button {
+    margin-top: 83px;
+  }
+}
+
+@media (min-width: 480px) {
+
+  // Here is what you get
+
+  .what-you-get__header {
+    font-size: 42px;
+  }
+
+  .what-you-get__wrapper {
+    margin: 0 30px 0 30px;
+  }
+
+  .what-you-get__content {
+    display: grid;
+    grid-template-areas:
+            "image header"
+            "image paragraph";
+
+    & .what-you-get__pictures {
+      grid-area: image;
+      width: 111px;
+      margin-right: 25px;
+    }
+
+    & h3 {
+      grid-area: header;
+      margin-top: 0;
+      text-align: left;
+    }
+
+    & p {
+      grid-area: paragraph;
+      text-align: left;
+    }
+  }
+
+  .what-you-get__banner {
+    margin: 70px 0 0 70px;
+    background-image: url("../../dist/img/editor 1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 519px;
+  }
+
+  //Fork Subscription Pricing
+
+  .subscription-pricing {
+    padding-top: 88px;
+    background-image: url("../../dist/img/Layer 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+
+  .subscription-pricing__header {
+    font-size: 42px;
+    line-height: 44px;
+  }
+
+  .subscription-pricing__wrapper {
+    margin-right: 5%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .subscription-pricing__content {
+    margin: 40px 0 0 0;
+  }
+
+
+}
+
+@media (min-width: 993px) {
+
+  // Here is what you get
+
+  .what-you-get {
+    padding-top: 95px;
+    padding-bottom: 30px;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-areas:
+              "content header"
+              "content banner";
+  }
+
+  .what-you-get__header {
+    grid-area: header;
+    margin: 0;
+  }
+
+  .what-you-get__wrapper {
+    grid-area: content;
+
+  }
+
+  .what-you-get__content:first-child {
+    margin-top: 0;
+  }
+
+  .what-you-get__banner {
+    grid-area: banner;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+}
+

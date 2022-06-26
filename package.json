@@ -27,5 +27,8 @@
     "gulp-terser": "^2.1.0",
     "sass": "^1.52.3"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  }
 }

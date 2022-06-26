@@ -376,8 +376,8 @@
   }
 
   .subscription-pricing__wrapper {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
     //margin: 0 110px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -391,6 +391,13 @@
 
   .subscription-pricing__content.active {
     margin: 0 1px 0 1px;
+    position: relative;
+    right: 30px;
+    //height: 560px;
+
+    a {
+      margin-top: 150px;
+    }
   }
 }
 

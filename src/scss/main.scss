@@ -16,7 +16,7 @@
   margin: 0 auto;
 }
 
-.logo-hover{
+.logo-hover {
   display: none;
 }
 
@@ -239,12 +239,12 @@
     position: relative;
   }
 
-.logo-violet{
-  display: flex;
-  text-decoration: none;
-}
+  .logo-violet {
+    display: flex;
+    text-decoration: none;
+  }
 
-  .logo-hover{
+  .logo-hover {
     display: flex;
     text-decoration: none;
     position: absolute;
@@ -253,34 +253,34 @@
     opacity: 0;
   }
 
-.logo-violet:hover .logo-hover{
-  opacity: 1;
-}
+  .logo-violet:hover .logo-hover {
+    opacity: 1;
+  }
 
-  .logo-violet:hover .logo-text-violet{
+  .logo-violet:hover .logo-text-violet {
     color: $hover;
   }
 
 
- .logo-text-violet{
-   display: block;
-   font-style: normal;
-   font-weight: 700;
-   font-size: 24px;
-   line-height: 16px;
-   text-transform: uppercase;
-   color: $primary;
+  .logo-text-violet {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $primary;
 
- }
+  }
 
- .block{
-   margin-top: 13px;
-   margin-left: 17px;
- }
+  .block {
+    margin-top: 13px;
+    margin-left: 17px;
+  }
 
-.navigation__nav-bar {
-  display: none;
-}
+  .navigation__nav-bar {
+    display: none;
+  }
 
   .navigation-items-tablet {
     display: block;

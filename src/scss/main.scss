@@ -304,14 +304,27 @@
 
 // People Are Talking About Fork
 
+.People-Are-Talking-About-Fork__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .People-Are-Talking-About-Fork {
   background-image: url("./img/testmonials-bg 1.png");
-  //background-image: url("./img/base 3 (1).png");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 57px 25px 0 25px;
+
+  &::after {
+    display: block;
+    margin-top: 25px;
+    content: "";
+    height: 4px;
+    border-top: 2px solid #645766;
+  }
 }
 
 .People-Are-Talking-About-Fork__comment {
@@ -385,9 +398,11 @@
 }
 
 .subscription-pricing__content {
-  margin: 20px 32px 0 32px;
+  margin: 20px auto 0 auto;
   background: rgba(255, 255, 255, 11%);
   padding-bottom: 36px;
+  width: 257px;
+  height: 457px;
 
 
   & .subscription-pricing__rate {
@@ -442,6 +457,7 @@
     color: white;
     text-align: center;
     margin: 30px 20px 0 20px;
+    height: 44px;
   }
 
   & .subscription-pricing__button {
@@ -467,9 +483,13 @@
   margin: 20px 10px 0 10px;
   background: rgba(70, 48, 72, 84%);
   padding-bottom: 36px;
+  width: 299px;
+  height: 560px;
 
   & .subscription-pricing__rate {
     background: rgba(0, 0, 0, 11%);
+    padding-top: 43px;
+    padding-bottom: 43px;
   }
 
   & .subscription-pricing__price {
@@ -477,7 +497,7 @@
   }
 
   & .subscription-pricing__button {
-    margin-top: 83px;
+    margin-top: 120px;
   }
 }
 
@@ -664,13 +684,14 @@
   }
 
   .subscription-pricing__wrapper {
-    margin-right: 10%;
-    margin-left: 10%;
-    //margin: 0 110px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 60px;
   }
 
   .subscription-pricing__content {
@@ -678,10 +699,6 @@
   }
 
   .subscription-pricing__content.active {
-    margin: 0 1px 0 1px;
-    position: relative;
-    right: 30px;
-    //height: 560px;
 
     a {
       margin-top: 150px;
@@ -767,7 +784,6 @@
 
 
   //// Here is what you get
-  //
   .what-you-get {
     margin-top: 70px;
     padding-top: 95px;
@@ -823,23 +839,7 @@
     line-height: 50px;
   }
 
-  .subscription-pricing__wrapper {
-    margin-right: 133px;
-    margin-left: 133px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: none;
-    gap: 15px;
-  }
-
-  .subscription-pricing__content {
-    margin: 112px 0 0 0;
-  }
-
   .subscription-pricing__content.active {
-    margin: 60px 1px 0 1px;
-    position: relative;
-    top: 100px;
 
     & h3 {
       margin: 0 1fr 0 1fr;
